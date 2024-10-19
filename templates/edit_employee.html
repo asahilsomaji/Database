@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Employee</title>
+</head>
+<body>
+    <h1>Edit Employee</h1>
+    <form method="POST">
+        <!-- Populate with existing employee data -->
+        <input type="text" name="employee_id" value="{{ employee[0] }}" readonly>
+        <input type="number" name="age" value="{{ employee[1] }}" required>
+        <input type="text" name="gender" value="{{ employee[2] }}" required>
+        <input type="number" name="years_at_company" value="{{ employee[3] }}" required>
+        <input type="text" name="job_role" value="{{ employee[4] }}" required>
+        <input type="number" name="monthly_income" value="{{ employee[5] }}" required>
+        <input type="text" name="work_life_balance" value="{{ employee[6] }}" required>
+        <input type="text" name="job_satisfaction" value="{{ employee[7] }}" required>
+        <input type="text" name="performance_rating" value="{{ employee[8] }}" required>
+        <input type="number" name="number_of_promotions" value="{{ employee[9] }}" required>
+        <input type="text" name="overtime" value="{{ employee[10] }}" required>
+        <input type="number" name="distance_from_home" value="{{ employee[11] }}" required>
+        <input type="text" name="education_level" value="{{ employee[12] }}" required>
+        <input type="text" name="marital_status" value="{{ employee[13] }}" required>
+        <input type="number" name="number_of_dependents" value="{{ employee[14] }}" required>
+        <input type="text" name="job_level" value="{{ employee[15] }}" required>
+        <input type="text" name="company_size" value="{{ employee[16] }}" required>
+        <input type="number" name="company_tenure" value="{{ employee[17] }}" required>
+        <input type="text" name="remote_work" value="{{ employee[18] }}" required>
+        <input type="text" name="leadership_opportunities" value="{{ employee[19] }}" required>
+        <input type="text" name="innovation_opportunities" value="{{ employee[20] }}" required>
+        <input type="text" name="company_reputation" value="{{ employee[21] }}" required>
+        <input type="text" name="employee_recognition" value="{{ employee[22] }}" required>
+        <input type="text" name="attrition" value="{{ employee[23] }}" required>
+        <button type="submit">Update Employee</button>
+    </form>
+</body>
+</html>
